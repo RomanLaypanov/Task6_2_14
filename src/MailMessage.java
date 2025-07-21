@@ -1,23 +1,9 @@
-public class MailMessage {
-    private String from;
-    private String to;
-    private String content;
-
+public class MailMessage extends Sample {
     public MailMessage(String from, String to, String content) {
-        this.from = from;
-        this.to = to;
-        this.content = content;
+        super(from, to, content);
     }
 
     public String getContent() {
-        return content;
-    }
-
-    public String getFrom() {
-        return from;
-    }
-
-    public String getTo() {
-        return to;
+        return (String) sample;
     }
 }

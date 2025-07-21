@@ -1,23 +1,9 @@
-public class Salary {
-    private String from;
-    private String to;
-    private int salary;
-
+public class Salary extends Sample {
     public Salary(String from, String to, int salary) {
-        this.from = from;
-        this.to = to;
-        this.salary = salary;
-    }
-
-    public String getFrom() {
-        return from;
+        super(from, to, salary);
     }
 
     public int getSalary() {
-        return salary;
-    }
-
-    public String getTo() {
-        return to;
+        return (int) sample;
     }
 }
