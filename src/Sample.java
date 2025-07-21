@@ -1,6 +1,6 @@
 abstract class Sample<T> {
-    String from;
-    String to;
+    private String from;
+    private String to;
     T sample;
 
     public Sample(String from, String to, T sample) {
